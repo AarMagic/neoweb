@@ -1,16 +1,26 @@
 ---
+const titulo = "Inicio";
+const descripcion =
+  "Domina HTML con nuestra comunidad en **NeoCode**. Descubre recursos, tutoriales y guías prácticas para desarrollar habilidades sólidas en codificación HTML. Únete y mejora tu conocimiento con nosotros.";
 
+import Layout from "../layout/layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Neo Web</title>
-	</head>
-	<body>
-		<h1>Neo Web</h1>
-	</body>
-</html>
+<Layout titulo={titulo} descripcion={descripcion}>
+  <section class="h-96 mb-4 h-96 relative relative">
+    <video
+      class="min-w-full h-full object-cover brightness-50"
+      src="/videos/cabecera.mp4"
+      autoplay
+      loop></video>
+    <div
+      class="flex flex-col absolute inset-0 text-center text-white justify-center gap-5"
+    >
+      <h1 class="text-6xl font-extrabold">NeoWeb</h1>
+      <p>Colabora, aprende y comparte conocimientos</p>
+    </div>
+  </section>
+  <main>
+    
+  </main>
+</Layout>
